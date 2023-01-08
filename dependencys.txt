@@ -13,4 +13,4 @@ Further Steps needs to be done in order for the project to work.
 
 6. To fill the Database with test date you will need Postman. You can download it here: https://www.postman.com/downloads/
 6.1 You can import the Postman Collection from the DatabaseTestingSocial.postman_collection.json in the project.
-6.2 This is just fot the SocialNetwork Project!
+6.2 This is just for the SocialNetwork Project!
