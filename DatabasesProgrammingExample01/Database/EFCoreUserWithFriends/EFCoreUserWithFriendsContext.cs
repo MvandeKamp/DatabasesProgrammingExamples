@@ -25,7 +25,6 @@ namespace DatabasesProgrammingExample01.Database.EFCoreUserWithFriends
                 .HasOne(uwfj => uwfj.Friend)
                 .WithMany()
                 .HasForeignKey(uwfj => uwfj.FriendId);
-
         }
     }
 }
