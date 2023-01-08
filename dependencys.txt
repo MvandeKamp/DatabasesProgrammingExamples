@@ -1,0 +1,16 @@
+These dependencys needs to be installed on your Computer for this whole Project to work.
+
+1. Install Docker-Desktop on your Computer (https://www.docker.com/products/docker-desktop)
+2. Install VS 2022 with the .net Core 6.0 and web development Workload (https://visualstudio.microsoft.com/de/downloads/)
+
+
+Further Steps needs to be done in order for the project to work.
+
+3. Run the create-sql-server.cmd from a Powershell
+4. Now you can run the projects in the solution with VS 2022 
+
+5. For ease of use and development i choose to only use breakpoints and the command line to show the results of the code.
+
+6. To fill the Database with test date you will need Postman. You can download it here: https://www.postman.com/downloads/
+6.1 You can import the Postman Collection from the DatabaseTestingSocial.postman_collection.json in the project.
+6.2 This is just fot the SocialNetwork Project!

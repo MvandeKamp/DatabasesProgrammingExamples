@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "9576ae99-c915-42a7-886e-1511bb132bce",
+		"name": "DatabaseTestingSocial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AddPost1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"1\",\r\n    \"content\": \"This is my new cat! Cat.png SUCH WOW\",\r\n    \"postDate\": \"2023-01-01\",\r\n    \"reactions\": [\r\n        {\r\n            \"postId\": \"1\",\r\n            \"userId\": \"2\",\r\n            \"comment\": \"Nice cat!\",\r\n            \"like\": 1,\r\n            \"reactiondate\": \"2023-01-02\"\r\n        },\r\n        {\r\n            \"postId\": \"1\",\r\n            \"userId\": \"3\",\r\n            \"comment\": \"Looks ugly\",\r\n            \"like\": -1,\r\n            \"reactiondate\": \"2023-01-02\"\r\n        }\r\n        {\r\n            \"postId\": \"1\",\r\n            \"userId\": \"1\",\r\n            \"comment\": \"No u\",\r\n            \"like\": -1,\r\n            \"reactiondate\": \"2023-01-02\",\r\n            \"reactedToId\": \"2\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7297/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7297",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostUser1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Bob\",\r\n    \"lastName\": \"Ross\",\r\n    \"email\": \"Bob@Ross.com\",\r\n    \"friends\": [\r\n\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7297/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7297",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostUser2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Ango\",\r\n    \"lastName\": \"Bogo\",\r\n    \"email\": \"Ango@Bogo.com\",\r\n    \"friends\": [\r\n        {\r\n            \"userId\": 2,\r\n            \"friendId\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7297/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7297",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostUser3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Max\",\r\n    \"lastName\": \"Muster\",\r\n    \"email\": \"Max@Mustermail.com\",\r\n    \"friends\": [\r\n        {\r\n            \"userId\": 2,\r\n            \"friendId\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7297/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7297",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePost1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"1\",\r\n    \"content\": \"This is my new cat! Cat.png SUCH WOW\",\r\n    \"postDate\": \"2023-01-01\",\r\n    \"reactions\": [\r\n        {\r\n            \"postId\": \"1\",\r\n            \"userId\": \"2\",\r\n            \"comment\": \"Nice cat!\",\r\n            \"like\": 1,\r\n            \"reactiondate\": \"2023-01-02\"\r\n        },\r\n        {\r\n            \"postId\": \"1\",\r\n            \"userId\": \"3\",\r\n            \"comment\": \"Looks ugly\",\r\n            \"like\": -1,\r\n            \"reactiondate\": \"2023-01-02\"\r\n        },\r\n                {\r\n            \"postId\": \"1\",\r\n            \"userId\": \"1\",\r\n            \"comment\": \"No u\",\r\n            \"like\": -1,\r\n            \"reactiondate\": \"2023-01-02\",\r\n            \"reactedToId\": \"2\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7297/api/posts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7297",
+					"path": [
+						"api",
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPost1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7297/api/posts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7297",
+					"path": [
+						"api",
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32708.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabasesProgrammingExample01", "DatabasesProgrammingExample01\DatabasesProgrammingExample01.csproj", "{467AA2CD-8AD8-4BF8-9A8E-94BF162ABC2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{C89D5E6B-FB33-478F-BB73-E4765BFB460D}"
+	ProjectSection(SolutionItems) = preProject
+		create-sql-server.cmd = create-sql-server.cmd
+		DatabaseTestingSocial.postman_collection.json = DatabaseTestingSocial.postman_collection.json
+		dependencys.txt = dependencys.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabasesProgrammingExampleSocialNetwork", "DatabasesProgrammingExampleSocialNetwork\DatabasesProgrammingExampleSocialNetwork.csproj", "{B605E575-E343-45E4-88B0-27F61684A03A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{467AA2CD-8AD8-4BF8-9A8E-94BF162ABC2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{467AA2CD-8AD8-4BF8-9A8E-94BF162ABC2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{467AA2CD-8AD8-4BF8-9A8E-94BF162ABC2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{467AA2CD-8AD8-4BF8-9A8E-94BF162ABC2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B605E575-E343-45E4-88B0-27F61684A03A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B605E575-E343-45E4-88B0-27F61684A03A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B605E575-E343-45E4-88B0-27F61684A03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B605E575-E343-45E4-88B0-27F61684A03A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12D8C529-90D0-4FF3-B872-A46B1310A537}
+	EndGlobalSection
+EndGlobal
